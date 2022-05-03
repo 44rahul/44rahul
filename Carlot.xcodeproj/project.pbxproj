@@ -13,9 +13,31 @@
 		730E7CD8281978DF0098EB17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 730E7CD6281978DF0098EB17 /* Main.storyboard */; };
 		730E7CDA281978E20098EB17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 730E7CD9281978E20098EB17 /* Assets.xcassets */; };
 		730E7CDD281978E20098EB17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 730E7CDB281978E20098EB17 /* LaunchScreen.storyboard */; };
+		739B4442281C07A8001B9DD8 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 739B4436281C07A8001B9DD8 /* Gilroy-Medium.ttf */; };
+		739B4443281C07A8001B9DD8 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 739B4437281C07A8001B9DD8 /* Gilroy-Regular.ttf */; };
+		739B4444281C07A8001B9DD8 /* Gilroy-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 739B4438281C07A8001B9DD8 /* Gilroy-UltraLight.ttf */; };
+		739B4445281C07A8001B9DD8 /* Gilroy-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 739B4439281C07A8001B9DD8 /* Gilroy-Black.ttf */; };
+		739B4446281C07A8001B9DD8 /* Gilroy-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 739B443A281C07A8001B9DD8 /* Gilroy-ExtraBold.ttf */; };
+		739B4447281C07A8001B9DD8 /* Gilroy-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 739B443B281C07A8001B9DD8 /* Gilroy-Light.ttf */; };
+		739B4448281C07A8001B9DD8 /* Gilroy-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 739B443C281C07A8001B9DD8 /* Gilroy-Thin.ttf */; };
+		739B4449281C07A8001B9DD8 /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 739B443D281C07A8001B9DD8 /* Gilroy-SemiBold.ttf */; };
+		739B444A281C07A8001B9DD8 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 739B443E281C07A8001B9DD8 /* Gilroy-Bold.ttf */; };
+		739B444B281C07A8001B9DD8 /* Gilroy-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 739B443F281C07A8001B9DD8 /* Gilroy-Heavy.ttf */; };
+		739B444C281C07A8001B9DD8 /* Gilroy-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 739B4440281C07A8001B9DD8 /* Gilroy-Light.otf */; };
+		739B444D281C07A8001B9DD8 /* Gilroy-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 739B4441281C07A8001B9DD8 /* Gilroy-ExtraBold.otf */; };
+		739B4450281C0C53001B9DD8 /* ForgotEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B444F281C0C53001B9DD8 /* ForgotEmailVC.swift */; };
+		73BB5CC528210002005B6155 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB5CC428210002005B6155 /* HomeVC.swift */; };
+		73BB5CC828210047005B6155 /* HomeMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB5CC728210047005B6155 /* HomeMainTableViewCell.swift */; };
+		73BB5CCA2821010B005B6155 /* BannerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB5CC92821010B005B6155 /* BannerTableCell.swift */; };
+		73BB5CCC28210139005B6155 /* BrandTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB5CCB28210139005B6155 /* BrandTableCell.swift */; };
+		73BB5CCE2821036E005B6155 /* CategoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB5CCD2821036E005B6155 /* CategoryTableCell.swift */; };
+		73BB5CD1282140A0005B6155 /* BrandCollectioncell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB5CD0282140A0005B6155 /* BrandCollectioncell.swift */; };
+		826AA0DA64FAFD960E6BBF79 /* Pods_Carlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156C9C046BF4A7109A6026F7 /* Pods_Carlot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		156C9C046BF4A7109A6026F7 /* Pods_Carlot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carlot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FBBEF62972B1DCCC35A2EB3 /* Pods-Carlot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carlot.release.xcconfig"; path = "Target Support Files/Pods-Carlot/Pods-Carlot.release.xcconfig"; sourceTree = "<group>"; };
 		730E7CCD281978DF0098EB17 /* Carlot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carlot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		730E7CD0281978DF0098EB17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		730E7CD2281978DF0098EB17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +46,26 @@
 		730E7CD9281978E20098EB17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		730E7CDC281978E20098EB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		730E7CDE281978E20098EB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		739B4436281C07A8001B9DD8 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
+		739B4437281C07A8001B9DD8 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
+		739B4438281C07A8001B9DD8 /* Gilroy-UltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-UltraLight.ttf"; sourceTree = "<group>"; };
+		739B4439281C07A8001B9DD8 /* Gilroy-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Black.ttf"; sourceTree = "<group>"; };
+		739B443A281C07A8001B9DD8 /* Gilroy-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ExtraBold.ttf"; sourceTree = "<group>"; };
+		739B443B281C07A8001B9DD8 /* Gilroy-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Light.ttf"; sourceTree = "<group>"; };
+		739B443C281C07A8001B9DD8 /* Gilroy-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Thin.ttf"; sourceTree = "<group>"; };
+		739B443D281C07A8001B9DD8 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
+		739B443E281C07A8001B9DD8 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
+		739B443F281C07A8001B9DD8 /* Gilroy-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Heavy.ttf"; sourceTree = "<group>"; };
+		739B4440281C07A8001B9DD8 /* Gilroy-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Light.otf"; sourceTree = "<group>"; };
+		739B4441281C07A8001B9DD8 /* Gilroy-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ExtraBold.otf"; sourceTree = "<group>"; };
+		739B444F281C0C53001B9DD8 /* ForgotEmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotEmailVC.swift; sourceTree = "<group>"; };
+		73BB5CC428210002005B6155 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		73BB5CC728210047005B6155 /* HomeMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainTableViewCell.swift; sourceTree = "<group>"; };
+		73BB5CC92821010B005B6155 /* BannerTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTableCell.swift; sourceTree = "<group>"; };
+		73BB5CCB28210139005B6155 /* BrandTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandTableCell.swift; sourceTree = "<group>"; };
+		73BB5CCD2821036E005B6155 /* CategoryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableCell.swift; sourceTree = "<group>"; };
+		73BB5CD0282140A0005B6155 /* BrandCollectioncell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCollectioncell.swift; sourceTree = "<group>"; };
+		F0DB0B746CA02A864B93D2F8 /* Pods-Carlot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carlot.debug.xcconfig"; path = "Target Support Files/Pods-Carlot/Pods-Carlot.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +73,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826AA0DA64FAFD960E6BBF79 /* Pods_Carlot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EB86F696D818A4DDFC9875E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0DB0B746CA02A864B93D2F8 /* Pods-Carlot.debug.xcconfig */,
+				2FBBEF62972B1DCCC35A2EB3 /* Pods-Carlot.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2DAC33E700DB31D0F8848D66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				156C9C046BF4A7109A6026F7 /* Pods_Carlot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		730E7CC4281978DF0098EB17 = {
 			isa = PBXGroup;
 			children = (
 				730E7CCF281978DF0098EB17 /* Carlot */,
 				730E7CCE281978DF0098EB17 /* Products */,
+				1EB86F696D818A4DDFC9875E /* Pods */,
+				2DAC33E700DB31D0F8848D66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +118,74 @@
 		730E7CCF281978DF0098EB17 /* Carlot */ = {
 			isa = PBXGroup;
 			children = (
+				73BB5CC32820FFE3005B6155 /* Home */,
+				739B444E281C0C1F001B9DD8 /* Verification */,
 				730E7CD0281978DF0098EB17 /* AppDelegate.swift */,
 				730E7CD2281978DF0098EB17 /* SceneDelegate.swift */,
 				730E7CD4281978DF0098EB17 /* ViewController.swift */,
+				739B4435281C07A8001B9DD8 /* Gilroy_Font */,
 				730E7CD6281978DF0098EB17 /* Main.storyboard */,
 				730E7CD9281978E20098EB17 /* Assets.xcassets */,
 				730E7CDB281978E20098EB17 /* LaunchScreen.storyboard */,
 				730E7CDE281978E20098EB17 /* Info.plist */,
 			);
 			path = Carlot;
+			sourceTree = "<group>";
+		};
+		739B4435281C07A8001B9DD8 /* Gilroy_Font */ = {
+			isa = PBXGroup;
+			children = (
+				739B4436281C07A8001B9DD8 /* Gilroy-Medium.ttf */,
+				739B4437281C07A8001B9DD8 /* Gilroy-Regular.ttf */,
+				739B4438281C07A8001B9DD8 /* Gilroy-UltraLight.ttf */,
+				739B4439281C07A8001B9DD8 /* Gilroy-Black.ttf */,
+				739B443A281C07A8001B9DD8 /* Gilroy-ExtraBold.ttf */,
+				739B443B281C07A8001B9DD8 /* Gilroy-Light.ttf */,
+				739B443C281C07A8001B9DD8 /* Gilroy-Thin.ttf */,
+				739B443D281C07A8001B9DD8 /* Gilroy-SemiBold.ttf */,
+				739B443E281C07A8001B9DD8 /* Gilroy-Bold.ttf */,
+				739B443F281C07A8001B9DD8 /* Gilroy-Heavy.ttf */,
+				739B4440281C07A8001B9DD8 /* Gilroy-Light.otf */,
+				739B4441281C07A8001B9DD8 /* Gilroy-ExtraBold.otf */,
+			);
+			path = Gilroy_Font;
+			sourceTree = "<group>";
+		};
+		739B444E281C0C1F001B9DD8 /* Verification */ = {
+			isa = PBXGroup;
+			children = (
+				739B444F281C0C53001B9DD8 /* ForgotEmailVC.swift */,
+			);
+			path = Verification;
+			sourceTree = "<group>";
+		};
+		73BB5CC32820FFE3005B6155 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				73BB5CC428210002005B6155 /* HomeVC.swift */,
+				73BB5CC62821000B005B6155 /* Cell */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		73BB5CC62821000B005B6155 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				73BB5CCF28213F3B005B6155 /* CollectionCells */,
+				73BB5CC728210047005B6155 /* HomeMainTableViewCell.swift */,
+				73BB5CC92821010B005B6155 /* BannerTableCell.swift */,
+				73BB5CCB28210139005B6155 /* BrandTableCell.swift */,
+				73BB5CCD2821036E005B6155 /* CategoryTableCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		73BB5CCF28213F3B005B6155 /* CollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				73BB5CD0282140A0005B6155 /* BrandCollectioncell.swift */,
+			);
+			path = CollectionCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 730E7CE1281978E20098EB17 /* Build configuration list for PBXNativeTarget "Carlot" */;
 			buildPhases = (
+				0BFAFFF2ECAE720D2D87666D /* [CP] Check Pods Manifest.lock */,
 				730E7CC9281978DF0098EB17 /* Sources */,
 				730E7CCA281978DF0098EB17 /* Frameworks */,
 				730E7CCB281978DF0098EB17 /* Resources */,
+				FD84DCFD57CE74798811C862 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +248,83 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739B4446281C07A8001B9DD8 /* Gilroy-ExtraBold.ttf in Resources */,
+				739B4443281C07A8001B9DD8 /* Gilroy-Regular.ttf in Resources */,
+				739B444D281C07A8001B9DD8 /* Gilroy-ExtraBold.otf in Resources */,
 				730E7CDD281978E20098EB17 /* LaunchScreen.storyboard in Resources */,
+				739B444A281C07A8001B9DD8 /* Gilroy-Bold.ttf in Resources */,
+				739B4448281C07A8001B9DD8 /* Gilroy-Thin.ttf in Resources */,
+				739B4444281C07A8001B9DD8 /* Gilroy-UltraLight.ttf in Resources */,
+				739B4442281C07A8001B9DD8 /* Gilroy-Medium.ttf in Resources */,
 				730E7CDA281978E20098EB17 /* Assets.xcassets in Resources */,
+				739B444C281C07A8001B9DD8 /* Gilroy-Light.otf in Resources */,
+				739B444B281C07A8001B9DD8 /* Gilroy-Heavy.ttf in Resources */,
+				739B4449281C07A8001B9DD8 /* Gilroy-SemiBold.ttf in Resources */,
+				739B4447281C07A8001B9DD8 /* Gilroy-Light.ttf in Resources */,
+				739B4445281C07A8001B9DD8 /* Gilroy-Black.ttf in Resources */,
 				730E7CD8281978DF0098EB17 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BFAFFF2ECAE720D2D87666D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Carlot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD84DCFD57CE74798811C862 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Carlot/Pods-Carlot-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Carlot/Pods-Carlot-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Carlot/Pods-Carlot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		730E7CC9281978DF0098EB17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739B4450281C0C53001B9DD8 /* ForgotEmailVC.swift in Sources */,
+				73BB5CC528210002005B6155 /* HomeVC.swift in Sources */,
+				73BB5CCE2821036E005B6155 /* CategoryTableCell.swift in Sources */,
+				73BB5CD1282140A0005B6155 /* BrandCollectioncell.swift in Sources */,
 				730E7CD5281978DF0098EB17 /* ViewController.swift in Sources */,
+				73BB5CCA2821010B005B6155 /* BannerTableCell.swift in Sources */,
 				730E7CD1281978DF0098EB17 /* AppDelegate.swift in Sources */,
 				730E7CD3281978DF0098EB17 /* SceneDelegate.swift in Sources */,
+				73BB5CCC28210139005B6155 /* BrandTableCell.swift in Sources */,
+				73BB5CC828210047005B6155 /* HomeMainTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +466,7 @@
 		};
 		730E7CE2281978E20098EB17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0DB0B746CA02A864B93D2F8 /* Pods-Carlot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +495,7 @@
 		};
 		730E7CE3281978E20098EB17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FBBEF62972B1DCCC35A2EB3 /* Pods-Carlot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
