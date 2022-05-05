@@ -10,7 +10,6 @@ import UIKit
 class HomeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     @IBOutlet weak var homeTable: UITableView!
-    @IBOutlet weak var BrandCollection: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,19 +43,20 @@ class HomeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         }else if indexPath.row == 1 {
             
             let cell1 = tableView.dequeueReusableCell(withIdentifier: "Cell2") as! BrandTableCell
+           
             return cell1
             
         }else
         {
             
             let cell2 = tableView.dequeueReusableCell(withIdentifier: "Cell3") as! CategoryTableCell
+            
+            cell2.layer.borderWidth = 0.5
+            cell2.layer.borderColor = UIColor.gray.cgColor
+            cell2.layer.cornerRadius = 20
             return cell2
             
         }
-        
-        
-        //        cell.selectionStyle = .none
-        
         
     }
     

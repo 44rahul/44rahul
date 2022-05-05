@@ -1,14 +1,15 @@
 //
-//  CategoryTableCell.swift
+//  SearchTableViewCell.swift
 //  Carlot
 //
-//  Created by emizen on 5/3/22.
+//  Created by emizen on 5/5/22.
 //
 
 import UIKit
 
-class CategoryTableCell: UITableViewCell {
+class SearchTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var searchSugglbl: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -12,6 +12,9 @@ class BrandTableCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewD
     @IBOutlet weak var BrandCollection: UICollectionView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        BrandCollection.delegate = self
+        BrandCollection.dataSource = self
         // Initialization code
     }
 
@@ -33,7 +36,7 @@ class BrandTableCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
        
-        return 13
+        return 3
         
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
