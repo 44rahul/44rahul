@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true
         
-        GMSPlacesClient.provideAPIKey("AIzaSyCv1E0nUu88UcCXq_3h1Iv0R_voN5MBpp0")
-        GMSServices.provideAPIKey("AIzaSyCv1E0nUu88UcCXq_3h1Iv0R_voN5MBpp0")
+//        GMSPlacesClient.provideAPIKey("AIzaSyCv1E0nUu88UcCXq_3h1Iv0R_voN5MBpp0")
+//        GMSServices.provideAPIKey("AIzaSyCv1E0nUu88UcCXq_3h1Iv0R_voN5MBpp0")
         
         let vc = LoginVC.instance(.Authentication) as! LoginVC
         let NavVC = UINavigationController(rootViewController: vc)
