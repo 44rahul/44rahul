@@ -6,17 +6,28 @@
 //
 
 import UIKit
+import GoogleMaps
+import GooglePlaces
 import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true
-
+        
+        GMSPlacesClient.provideAPIKey("AIzaSyCv1E0nUu88UcCXq_3h1Iv0R_voN5MBpp0")
+        GMSServices.provideAPIKey("AIzaSyCv1E0nUu88UcCXq_3h1Iv0R_voN5MBpp0")
+        
+        let vc = LoginVC.instance(.Authentication) as! LoginVC
+        let NavVC = UINavigationController(rootViewController: vc)
+        NavVC.isNavigationBarHidden = true
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 

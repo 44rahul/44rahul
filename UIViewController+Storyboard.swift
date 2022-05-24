@@ -30,6 +30,7 @@ extension UIViewController {
 enum Storyboard: String {
     
     case main = "Main"
+    case Authentication = "Authentication"
     case baseTab = "BaseTab"
     case homeTab = "Home"
     case newAdTab = "Search"
