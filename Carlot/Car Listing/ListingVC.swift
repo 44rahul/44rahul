@@ -63,11 +63,9 @@ class ListingVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
        
        // border.clipsToBounds = true
         border.layer.cornerRadius = 10
-
         border.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         listingView.addSubview(border)
       //  addSubview(border)
-        
-    }
+     }
 
 }

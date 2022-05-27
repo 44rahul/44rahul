@@ -20,7 +20,7 @@ class LoginVC: UIViewController {
     @IBOutlet weak var btn_gmail : UIButton!
     @IBOutlet weak var btn_signup : UIButton!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -64,20 +64,21 @@ class LoginVC: UIViewController {
             return
         }else{
             
-            let vc = SignUpVC.instance(.main) as! SignUpVC
+            let vc = SignUpVC.instance(.Authentication) as! SignUpVC
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     
     @IBAction func btnSignupClicked(_ sender: UIButton) {
-//        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-//        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpVC
-//        self.navigationController?.pushViewController(nextViewController, animated: true)
         
-        let vc = SignUpVC.instance(.main) as! SignUpVC
+        //        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        //        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpVC
+        //        self.navigationController?.pushViewController(nextViewController, animated: true)
+        let vc = SignUpVC.instance(.Authentication) as! SignUpVC
         self.navigationController?.pushViewController(vc, animated: true)
-    
+        
     }
+    
     @IBAction func btnSecureText(_ sender: UIButton) {
         txtPassword.isSecureTextEntry = false
     }

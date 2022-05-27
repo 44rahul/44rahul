@@ -14,6 +14,8 @@ class DetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     @IBOutlet weak var purchaseBtn: UIButton!
     @IBOutlet weak var ChatBtn: UIButton!
     @IBOutlet weak var followBtn: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,9 +23,6 @@ class DetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         ChatBtn.layer.cornerRadius = 10
         followBtn.layer.cornerRadius = 10
         DetailView.layer.cornerRadius = 10
-        
-        
-        
         
     }
     
@@ -37,7 +36,6 @@ class DetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 8
-        
         
     }
     
@@ -64,6 +62,7 @@ class DetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        
         
     }
     

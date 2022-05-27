@@ -29,41 +29,27 @@ class AddPostVC: UIViewController{
         
     }
     
-    
-   
-    
     func OpenGalleyOrCameraAction()
     {
         obj.imagePick(objVC: self)
-        
         obj.callback =  { img,ImgUrl in
-//            self.selectedStoryType = "0"
-//            self.UpdateImage=img as! UIImage
-//
-//
-//            let imgT = ThumbNail.getThumbnailfromImage(imageT: img as? UIImage ?? UIImage())
-//            let di = ["type":"image","img":img,"videoUrl":NSURL(),"imgThumb":imgT ?? UIImage()]
-//            self.UploadImage = img as! UIImage
-//
-//
-//            DispatchQueue.main.asyncAfter(deadline: .now()+1) {
-//                self.imageArr.append(di)
-//                self.ImageAndVideoUplaodApi()
-//
-            }
-            
+            //            self.selectedStoryType = "0"
+            //            self.UpdateImage=img as! UIImage
+            //
+            //
+            //            let imgT = ThumbNail.getThumbnailfromImage(imageT: img as? UIImage ?? UIImage())
+            //            let di = ["type":"image","img":img,"videoUrl":NSURL(),"imgThumb":imgT ?? UIImage()]
+            //            self.UploadImage = img as! UIImage
+            //
+            //
+            //            DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+            //                self.imageArr.append(di)
+            //                self.ImageAndVideoUplaodApi()
+            //
         }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
     }
-    */
-
+    
 }
 
 extension AddPostVC: UICollectionViewDataSource, UICollectionViewDelegate{

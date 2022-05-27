@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let vc = LoginVC.instance(.Authentication) as! LoginVC
                     let NavVC = UINavigationController(rootViewController: vc)
                     NavVC.isNavigationBarHidden = true
-                    self.window?.rootViewController = vc
+                    self.window?.rootViewController = NavVC
                     self.window?.makeKeyAndVisible()
         
         guard let _ = (scene as? UIWindowScene) else { return }
