@@ -9,10 +9,11 @@ import UIKit
 
 class SearchVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    var SearchSuggestionArr:[String] = ["By location","Model/brand","Color","Price range","KMS- miles","Owner"]
+    var SearchSuggestionArr:[String] = ["By location","Make/Model","Color","Price range","Miles","Dealer / Wholesaler"]
     
     @IBOutlet weak var searchView: UIView!
     @IBOutlet weak var searchTable: UITableView!
+    @IBOutlet weak var txtSearch : UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,11 @@ class SearchVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         searchTable.layer.borderWidth = 0.5
         searchTable.layer.borderColor = UIColor.white.cgColor
         
+        
+        txtSearch.attributedPlaceholder = NSAttributedString(
+            string: "Search here...",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
+        )
         
     }
     

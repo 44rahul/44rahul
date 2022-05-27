@@ -22,7 +22,7 @@ class EditProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ArrProfileInfo = ["Name", "Email", "Phone number", "Password", "Address"]
+        ArrProfileInfo = ["Name", "Email", "Mobile number", "Password","National Identity","License Number","Card tax Registration Number","Address"]
         
         print("Array Data:",self.ArrEditInfo)
 
@@ -58,7 +58,7 @@ extension EditProfileVC : UITableViewDelegate, UITableViewDataSource{
         else
         {
             cell.txtEditInfo.isUserInteractionEnabled = true
-            cell.txtEditInfo.textColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
+            //cell.txtEditInfo.textColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
         }
         if indexPath.row == 3{
             cell.txtEditInfo.isSecureTextEntry = true
@@ -73,6 +73,7 @@ extension EditProfileVC : UITableViewDelegate, UITableViewDataSource{
         
         cell.txtEditInfo.text = self.ArrEditInfo[indexPath.row]
         //cell.save_btn.addTarget(self, action: #selector(selected(sender:)), for: .touchUpInside)
+        cell.change_btn.addTarget(self, action: #selector(selected(sender:)), for: .touchUpInside)
         return cell
     }
     
@@ -80,10 +81,10 @@ extension EditProfileVC : UITableViewDelegate, UITableViewDataSource{
 //
 //    }
 //    
-//     @objc func selected(sender: AnyObject) {
-//            //...
-//         let vc = SideMenuVC.instance(.main) as! SideMenuVC
-//         self.navigationController?.pushViewController(vc, animated: true)
-//
-//        }
+     @objc func selected(sender: AnyObject) {
+            //...
+         let vc = ChangePasswordVC.instance(.main) as! ChangePasswordVC
+         self.navigationController?.pushViewController(vc, animated: true)
+
+        }
 }

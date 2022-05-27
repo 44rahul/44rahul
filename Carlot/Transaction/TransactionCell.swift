@@ -1,17 +1,13 @@
 //
-//  ProfileCell.swift
+//  TransactionCell.swift
 //  Carlot
 //
-//  Created by emizentech on 5/11/22.
+//  Created by emizentech on 5/25/22.
 //
 
 import UIKit
 
-class ProfileCell: UITableViewCell {
-    
-    @IBOutlet weak var lblName : UILabel!
-    @IBOutlet weak var lblAddres : UILabel!
-    @IBOutlet weak var txt_address : UITextField!
+class TransactionCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

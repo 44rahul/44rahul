@@ -68,7 +68,7 @@ class OTPVerificationVC: UIViewController {
     }
  
     @IBAction func btnVerifyClicked(_ sender: UIButton) {
-        let vc = SetPasswordVC.instance(.main) as! SetPasswordVC
+        let vc = SetPasswordVC.instance(.Authentication) as! SetPasswordVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

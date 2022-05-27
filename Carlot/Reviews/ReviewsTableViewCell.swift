@@ -20,6 +20,8 @@ class ReviewsTableViewCell: UITableViewCell {
         reviewsView.layer.borderWidth = 0.5
         
         userImg.layer.cornerRadius = userImg.frame.size.height/2
+        userImg.layer.borderColor = UIColor(red: 255/255, green: 207/255, blue: 4/255, alpha: 1).cgColor
+        userImg.layer.borderWidth = 1.0
         
         // Initialization code
     }
@@ -27,7 +29,7 @@ class ReviewsTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+       
     }
 
 }

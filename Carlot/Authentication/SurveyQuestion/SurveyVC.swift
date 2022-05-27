@@ -29,22 +29,62 @@ class SurveyVC: UIViewController {
         BrandBtn.layer.borderColor = UIColor(red: 51, green: 51, blue: 51, alpha: 1).cgColor
         BrandBtn.layer.cornerRadius = 10.0
         BrandBtn.layer.borderWidth = 0.5
+        BrandBtn.setTitle("Make Name", for: .normal)
+        BrandBtn.setTitleColor(.lightGray, for: .normal)
         
         ModelBtn.layer.borderColor = UIColor(red: 51, green: 51, blue: 51, alpha: 1).cgColor
         ModelBtn.layer.cornerRadius = 10.0
         ModelBtn.layer.borderWidth = 0.5
+        ModelBtn.setTitle("Model Number", for: .normal)
+        ModelBtn.setTitleColor(.lightGray, for: .normal)
         
         KmsBtn.layer.borderColor = UIColor(red: 51, green: 51, blue: 51, alpha: 1).cgColor
         KmsBtn.layer.cornerRadius = 10.0
         KmsBtn.layer.borderWidth = 0.5
+        KmsBtn.setTitle("Miles", for: .normal)
+        KmsBtn.setTitleColor(.lightGray, for: .normal)
         
         OwnerBtn.layer.borderColor = UIColor(red: 51, green: 51, blue: 51, alpha: 1).cgColor
         OwnerBtn.layer.cornerRadius = 10.0
         OwnerBtn.layer.borderWidth = 0.5
+        OwnerBtn.setTitle("Owner Type", for: .normal)
+        OwnerBtn.setTitleColor(.lightGray, for: .normal)
         
         BudgetBtn.layer.borderColor = UIColor(red: 51, green: 51, blue: 51, alpha: 1).cgColor
         BudgetBtn.layer.cornerRadius = 10.0
         BudgetBtn.layer.borderWidth = 0.5
+        BudgetBtn.setTitle("Budget", for: .normal)
+        BudgetBtn.setTitleColor(.lightGray, for: .normal)
+        
+//        BrandBtn.attributedPlaceholder = NSAttributedString(
+//            string: "Enter Your Name",
+//            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
+//        )
+//
+//        txtName.attributedPlaceholder = NSAttributedString(
+//            string: "Enter Your Name",
+//            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
+//        )
+//
+//        txtName.attributedPlaceholder = NSAttributedString(
+//            string: "Enter Your Name",
+//            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
+//        )
+//
+//        txtName.attributedPlaceholder = NSAttributedString(
+//            string: "Enter Your Name",
+//            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
+//        )
+//
+//        txtName.attributedPlaceholder = NSAttributedString(
+//            string: "Enter Your Name",
+//            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
+//        )
+//
+//        txtName.attributedPlaceholder = NSAttributedString(
+//            string: "Enter Your Name",
+//            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
+//        )
 
         
     }
@@ -54,8 +94,51 @@ class SurveyVC: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    func SetValidationFiled(){
+        
+        if (BrandBtn.currentTitle?.isStringBlank())!{
+            self.showCustomPopupView(altMsg:"Please enter brand name", alerttitle: "Error!", alertimg: UIImage(named: "Errorimg") ?? UIImage()) {
+                self.dismiss(animated: true, completion: nil)
+            }
+            return
+        }
+        else if (ModelBtn.currentTitle?.isStringBlank())!{
+            self.showCustomPopupView(altMsg:"Please enter model number", alerttitle: "Error!", alertimg: UIImage(named: "Errorimg") ?? UIImage()) {
+                self.dismiss(animated: true, completion: nil)
+            }
+            return
+        }
+        else if (KmsBtn.currentTitle?.isStringBlank())!{
+            self.showCustomPopupView(altMsg:"Please enter miles", alerttitle: "Error!", alertimg: UIImage(named: "Errorimg") ?? UIImage()) {
+                self.dismiss(animated: true, completion: nil)
+            }
+            return
+        }
+        else if (OwnerBtn.currentTitle?.isStringBlank())!{
+            self.showCustomPopupView(altMsg:"Please enter owner type", alerttitle: "Error!", alertimg: UIImage(named: "Errorimg") ?? UIImage()) {
+                self.dismiss(animated: true, completion: nil)
+            }
+            return
+        }
+        else if (BudgetBtn.currentTitle?.isStringBlank())!{
+            self.showCustomPopupView(altMsg:"Please enter budget", alerttitle: "Error!", alertimg: UIImage(named: "Errorimg") ?? UIImage()) {
+                self.dismiss(animated: true, completion: nil)
+            }
+            return
+        }else{
+        
+        let vc = ProfileVC.instance(.main) as! ProfileVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+    }
+    
     @IBAction func btnSubmitClicked(_ sender: Any) {
-        let vc = OTPVerificationVC.instance(.main) as! OTPVerificationVC
+        //let vc = OTPVerificationVC.instance(.Authentication) as! OTPVerificationVC
+        
+       // SetValidationFiled()
+        
+        let vc = ProfileVC.instance(.main) as! ProfileVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

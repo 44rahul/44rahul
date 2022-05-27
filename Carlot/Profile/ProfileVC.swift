@@ -20,8 +20,8 @@ class ProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ArrProfileInfo = ["Name", "Email", "Phone number", "Password", "Address"]
-        ArrProfileData = ["Robert Fox", "robertfox@gmail.com" ,"+1650-723-2300", "123456", "A/198 5, Via Giuseppe Orlandi, C 80071 Anac apri NA, Orlandi India"]
+        ArrProfileInfo = ["Name", "Email", "Mobile number", "Password", "National Identity","License Number","Card tax Registration Number","Address"]
+        ArrProfileData = ["Robert Fox", "robertfox@gmail.com" ,"+1650-723-2300", "1234567890", "Indian", "NT-79043/GZB 11/8/22" , "NH-509021/GZB /200950 ", "C/102, Via Giuseppe Orlandi, C 80071 Anac apri NA, Orlandi India"]
 
         // Do any additional setup after loading the view.
     }
@@ -50,7 +50,13 @@ extension ProfileVC : UITableViewDelegate, UITableViewDataSource
        let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileCell", for: indexPath) as! ProfileCell
         
         cell.lblName.text = ArrProfileInfo[indexPath.row]
-        cell.lblAddres.text = ArrProfileData[indexPath.row]
+        //cell.lblAddres.text = ArrProfileData[indexPath.row]
+        cell.txt_address.text = ArrProfileData[indexPath.row]
+        cell.txt_address.isUserInteractionEnabled = false
+        
+        if indexPath.row == 3{
+            cell.txt_address.isSecureTextEntry = true
+        }
         
         return cell
     }

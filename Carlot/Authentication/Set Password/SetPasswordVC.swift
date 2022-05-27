@@ -30,14 +30,28 @@ class SetPasswordVC: UIViewController {
         txt_confirmPassword.layer.borderColor = UIColor(red: 51, green: 51, blue: 51, alpha: 1).cgColor
         txt_confirmPassword.layer.cornerRadius = 10.0
         txt_confirmPassword.layer.borderWidth = 0.5
+        
+        SetTextField()
+    }
+    
+    func SetTextField(){
+        txt_password.attributedPlaceholder = NSAttributedString(
+            string: "Enter Your Password",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
+        )
+        
+        txt_confirmPassword.attributedPlaceholder = NSAttributedString(
+            string: "Re enter Your Password",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
+        )
     }
     
     @IBAction func backbuttonClicked(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func btnSaveClicked(_ sender: UIButton) {
-       
+    func SetValidationFiled()
+    {
         if(txt_password.text?.isStringBlank())!{
            self.showCustomPopupView(altMsg:"Please enter password", alerttitle: "Error!", alertimg: UIImage(named: "Errorimg") ?? UIImage()) {
            self.dismiss(animated: true, completion: nil)
@@ -62,9 +76,14 @@ class SetPasswordVC: UIViewController {
            return
            
         }else{
-//        let vc = FollowingVC.instance(.main) as! FollowingVC
-//        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = FollowingVC.instance(.main) as! FollowingVC
+        self.navigationController?.pushViewController(vc, animated: true)
         }
+    }
+    
+    @IBAction func btnSaveClicked(_ sender: UIButton) {
+       
+        
     }
     
 }

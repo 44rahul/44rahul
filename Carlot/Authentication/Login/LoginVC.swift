@@ -20,7 +20,7 @@ class LoginVC: UIViewController {
     @IBOutlet weak var btn_gmail : UIButton!
     @IBOutlet weak var btn_signup : UIButton!
     
-
+    var conditionIsChecked : Bool =  true
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,13 +38,29 @@ class LoginVC: UIViewController {
         txtPassword.layer.cornerRadius = 10.0
         txtPassword.layer.borderWidth = 0.5
         
+        SetTextField()
+        
+    }
+    
+    func SetTextField(){
+        txtEmailMobile.attributedPlaceholder = NSAttributedString(
+            string: "Enter Your Email",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
+        )
+        
+        txtPassword.attributedPlaceholder = NSAttributedString(
+            string: "Enter Your Password",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
+        )
     }
     
     @IBAction func btnForgotCliked(_ sender: UIButton) {
+        let vc = ForgotEmailVC.instance(.main) as! ForgotEmailVC
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    @IBAction func btnSubmitClicked(_ sender: UIButton) {
-        
+    func SetValidationFiled(){
+       
         if (txtEmailMobile.text?.isStringBlank())!{
             self.showCustomPopupView(altMsg:"Please enter email address", alerttitle: "Error!", alertimg: UIImage(named: "Errorimg") ?? UIImage()) {
                 self.dismiss(animated: true, completion: nil)
@@ -62,24 +78,37 @@ class LoginVC: UIViewController {
                 self.dismiss(animated: true, completion: nil)
             }
             return
+        }
+        else if txtPassword.text?.trimmingCharacters(in: .whitespaces).count ?? 0 < 6 {
+           self.showCustomPopupView(altMsg:"Mobile number should have minimun 6 digit", alerttitle: "Error!", alertimg: UIImage(named: "Errorimg") ?? UIImage()) {
+           self.dismiss(animated: true, completion: nil)
+          }
+           return
         }else{
             
-            let vc = SignUpVC.instance(.main) as! SignUpVC
+            let vc = SignUpVC.instance(.Authentication) as! SignUpVC
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     
-    @IBAction func btnSignupClicked(_ sender: UIButton) {
-//        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-//        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpVC
-//        self.navigationController?.pushViewController(nextViewController, animated: true)
+    @IBAction func btnSubmitClicked(_ sender: UIButton) {
         
-        let vc = SignUpVC.instance(.main) as! SignUpVC
+        SetValidationFiled()
+    }
+    
+    @IBAction func btnSignupClicked(_ sender: UIButton) {
+        let vc = SignUpVC.instance(.Authentication) as! SignUpVC
         self.navigationController?.pushViewController(vc, animated: true)
     
     }
     @IBAction func btnSecureText(_ sender: UIButton) {
+        if conditionIsChecked{
         txtPassword.isSecureTextEntry = false
+            conditionIsChecked = false
+        }else{
+            txtPassword.isSecureTextEntry = true
+            conditionIsChecked = true
+        }
     }
     
     @IBAction func btnFbLoginClicked(_ sender: UIButton) {

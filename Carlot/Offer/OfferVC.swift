@@ -17,9 +17,15 @@ class OfferVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func backButtonClicked(_ sender: UIButton) {
+        
+        self.navigationController?.popViewController(animated: true)
+    }
 
 
 }
+
+
 
 extension OfferVC : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

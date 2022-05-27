@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let vc = LoginVC.instance(.Authentication) as! LoginVC
         let NavVC = UINavigationController(rootViewController: vc)
         NavVC.isNavigationBarHidden = true
-        self.window?.rootViewController = vc
+        self.window?.rootViewController = NavVC
         self.window?.makeKeyAndVisible()
         
         return true

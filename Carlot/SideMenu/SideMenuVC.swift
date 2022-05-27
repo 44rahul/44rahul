@@ -51,13 +51,13 @@ class SideMenuVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        menuList = [MenuSection(list: [MenuDetail(text: "My Profile",img: "userprofile", type: .myprofile),
+        menuList = [MenuSection(list: [MenuDetail(text: "My Cars",img: "carSide", type: .myprofile),
                                        MenuDetail(text: "Notification", img: "notificationSide", type: .notification),
                                        MenuDetail(text: "Following", img: "followingSide", type: .following),
-                                       MenuDetail(text: "My orders", img: "orderSide", type: .myorders),
-                                       MenuDetail(text: "My favourite", img: "favouriteSide", type: .myfavourite),
-                                       MenuDetail(text: "Review & ratings", img: "reviewSide", type: .review),
-                                       MenuDetail(text: "Contact Us", img: "contactSide", type: .contact),
+                                       MenuDetail(text: "Membership plan", img: "membershipSide", type: .myorders),
+                                       MenuDetail(text: "Transaction", img: "transactionSide", type: .myfavourite),
+                                       MenuDetail(text: "Reviews & ratings", img: "reviewSide", type: .review),
+                                       MenuDetail(text: "Contact us", img: "contactSide", type: .contact),
                                        MenuDetail(text: "others", img: "otherSide", type: .others),
                                        MenuDetail(text: "Logout", img: "logoutSide", type: .logout),
 
@@ -112,27 +112,7 @@ extension SideMenuVC : UITableViewDelegate , UITableViewDataSource{
             
            return cell
         }
-        
-        
-        
-        
-      //  return cell
     }
-    
-    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//
-//        if indexPath.row == 7 {
-//
-//            return 229
-//        }else {
-//
-//            return UITableView.automaticDimension
-//
-//        }
-//
-//
-//    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
@@ -173,8 +153,8 @@ extension SideMenuVC : UITableViewDelegate , UITableViewDataSource{
 //        print("get Collaspe Index :\(previousIndex)")
 
         if sender.currentImage == UIImage(named: "upArrow") {
-            cell.CollaspeBtn.setImage(UIImage (named: "downArrow"), for: UIControl.State.normal)
-            checkimgstr = "downArrow"
+            cell.CollaspeBtn.setImage(UIImage (named: "Down_Arow"), for: UIControl.State.normal)
+            checkimgstr = "Down_Arow"
 
             height = 71
         }else {

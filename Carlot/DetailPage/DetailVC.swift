@@ -33,12 +33,15 @@ class DetailVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         DetailTable.contentInset = UIEdgeInsets(top: -self.view.safeAreaInsets.top, left: 0, bottom: 0, right:  0)
     }
     
+    @IBAction func backButtonClicked(_ sender: UIButton) {
+        
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 8
-        
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
